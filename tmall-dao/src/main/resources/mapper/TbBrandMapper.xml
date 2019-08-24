@@ -178,4 +178,8 @@
       first_char = #{firstChar,jdbcType=VARCHAR}
     where id = #{id,jdbcType=BIGINT}
   </update>
+
+  <select id="queryAll" resultType="org.skysigh.tmall.pojo.TbBrand">
+    select * from tb_brand;
+  </select>
 </mapper>

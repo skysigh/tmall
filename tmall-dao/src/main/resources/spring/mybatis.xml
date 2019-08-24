@@ -16,7 +16,7 @@
           destroy-method="close">
         <property name="driverClassName" value="${jdbc.driver}"/>
         <property name="url"
-                  value="jdbc:mysql://${jdbc.host}:3306/${jdbc.database}?useUnicode=true&amp;characterEncoding=utf-8&amp;zeroDateTimeBehavior=convertToNull"/>
+                  value="jdbc:mysql://${jdbc.host}:3306/${jdbc.database}"/>
         <property name="username" value="${jdbc.userName}"/>
         <property name="password" value="${jdbc.passWord}"/>
         <!-- 初始化连接大小 -->
@@ -42,7 +42,7 @@
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-        <property name="basePackage" value="com.zpc.mybatis.dao"/>
+        <property name="basePackage" value="org.skysigh.tmall.mapper"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 
