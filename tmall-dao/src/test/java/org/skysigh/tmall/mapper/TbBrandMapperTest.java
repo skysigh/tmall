@@ -20,6 +20,8 @@ public class TbBrandMapperTest {
     public void testFindAll() {
         List<TbBrand> tbBrand = brandMapper.queryAll();
         System.out.println(tbBrand);
+        tbBrand = brandMapper.queryAll();
+        System.out.println(tbBrand);
     }
 
 }

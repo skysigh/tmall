@@ -12,9 +12,15 @@
         <module>tmall-common</module>
         <module>tmall-pojo</module>
         <module>tmall-dao</module>
+        <module>tmall-shellergoods-interface</module>
+        <module>tmall-shellergoods-services</module>
+        <module>tmall-shellergoods-web</module>
     </modules>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <srping.version>5.1.8.RELEASE</srping.version>
         <db.pool.version>1.1.8</db.pool.version>
         <mybatis.spring.verison>2.0.2</mybatis.spring.verison>
@@ -23,8 +29,14 @@
         <mysql.connector.version>5.1.47</mysql.connector.version>
     </properties>
 
+
     <dependencyManagement>
         <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-webmvc</artifactId>
+                <version>${srping.version}</version>
+            </dependency>
             <!--spring容器-->
             <dependency>
                 <groupId>org.springframework</groupId>
@@ -76,6 +88,37 @@
                 <version>4.12</version>
                 <scope>test</scope>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.dubbo</groupId>
+                <artifactId>dubbo</artifactId>
+                <version>2.7.3</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>1.2.57</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.zookeeper</groupId>
+                <artifactId>zookeeper</artifactId>
+                <version>3.4.10</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.jboss.netty</groupId>
+                <artifactId>netty</artifactId>
+                <version>3.2.10.Final</version>
+            </dependency>
+            <dependency>
+                <groupId>org.javassist</groupId>
+                <artifactId>javassist</artifactId>
+                <version>3.25.0-GA</version>
+            </dependency>
+
+
         </dependencies>
     </dependencyManagement>
 
