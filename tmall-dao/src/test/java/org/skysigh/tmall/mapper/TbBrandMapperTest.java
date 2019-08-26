@@ -24,4 +24,12 @@ public class TbBrandMapperTest {
         System.out.println(tbBrand);
     }
 
+    @Test
+    public void testAdd() {
+        TbBrand tbBrand = new TbBrand();
+        tbBrand.setName("精通");
+        tbBrand.setFirstChar("J");
+        brandMapper.insert(tbBrand);
+    }
+
 }

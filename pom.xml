@@ -118,6 +118,12 @@
                 <version>3.25.0-GA</version>
             </dependency>
 
+            <dependency>
+                <groupId>com.github.pagehelper</groupId>
+                <artifactId>pagehelper</artifactId>
+                <version>5.1.10</version>
+            </dependency>
+
 
         </dependencies>
     </dependencyManagement>

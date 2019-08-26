@@ -10,11 +10,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>tmall-shellergoods-services</artifactId>
-    <packaging>war</packaging>
 
-    <name>tmall-shellergoods-services Maven Webapp</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+    <name>tmall-shellergoods-services</name>
+
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -42,16 +40,9 @@
         </dependency>
 
         <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-        </dependency>
-
-        <dependency>
             <groupId>org.apache.dubbo</groupId>
             <artifactId>dubbo</artifactId>
         </dependency>
-
-
 
         <dependency>
             <groupId>org.jboss.netty</groupId>
@@ -91,31 +82,22 @@
                 </exclusion>
             </exclusions>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.pagehelper</groupId>
+            <artifactId>pagehelper</artifactId>
+        </dependency>
     </dependencies>
-
     <build>
+
         <resources>
             <resource>
                 <directory>src/main/resource</directory>
                 <includes>
-                    <include>**/*.xml</include>
+                    <include>**</include>
                 </includes>
                 <filtering>true</filtering>
             </resource>
         </resources>
-        <plugins>
-            <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat7-maven-plugin</artifactId>
-                <version>2.2</version>
-                <configuration>
-                    <!-- 指定端口 -->
-                    <port>8080</port>
-                    <!-- 请求路径 -->
-                    <path>/</path>
-                </configuration>
-            </plugin>
-        </plugins>
+
     </build>
 </project>
