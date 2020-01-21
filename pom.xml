@@ -21,7 +21,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <srping.version>5.1.8.RELEASE</srping.version>
+        <srping.version>5.2.3.RELEASE</srping.version>
         <db.pool.version>1.1.8</db.pool.version>
         <mybatis.spring.verison>2.0.2</mybatis.spring.verison>
         <mybatis.version>3.5.2</mybatis.version>
